@@ -10,7 +10,7 @@ export const useForgotPassword = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:4000/api/forgot-password', {
+      const response = await fetch('https://kind-erin-viper-hose.cyclic.app/api/forgot-password', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),

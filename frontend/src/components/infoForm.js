@@ -40,7 +40,7 @@ const InfoForm = () => {
 
         const info = { title, bloodpressure, heartrate, bloodsugar };
 
-        const response = await fetch(`http://localhost:4000/api/info`, {
+        const response = await fetch(`https://kind-erin-viper-hose.cyclic.app/api/info`, {
             method: 'POST',
             body: JSON.stringify(info),
             headers: {
